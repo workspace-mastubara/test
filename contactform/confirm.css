@@ -1,0 +1,46 @@
+h1 {
+    border-left: 5px solid red;
+    background-color: whitesmoke;
+    width: 25%;
+    padding-left: 0.5em;
+}
+
+.box {
+    width: 25%;
+    height: 400px;
+    background-color: whitesmoke;
+    padding-left: 0.5em;
+    border-radius: 10px;
+    border: 3px solid lightgray;
+}
+
+
+
+.answer {
+    margin-bottom: 20px;
+}
+
+.modify {
+    float: left;
+    background-color: lightgray;
+    color: white;
+    border-radius: 5px;
+}
+
+.regist {
+    float: left;
+    margin-left: 1em;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+    
+        
