@@ -43,14 +43,14 @@ document.write("<br><br><br><br>■■■問3■■■<br><br>");
 document.write("ココカラ---------<br>");
 
 for (var i = 0; i < 5; i++){
-    for (var j = 0; j < i+1; j++){
-        if(j % 2 == 0){
+    for (var j = 0; j <= i; j++){
+        if(j == i){
             document.write("☆");
         } else {
             document.write("★");
         }
-
     }
+    document.write("<br>");
 }
 
 document.write("---------ココマデ");
