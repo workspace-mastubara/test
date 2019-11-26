@@ -42,7 +42,7 @@ public class MySQLServlet extends HttpServlet {
 			conn = DriverManager.getConnection(url, user, password);
 
 			Statement stmt = conn.createStatement();
-			String sql = "SERECT * FROM test_table";
+			String sql = "SELECT * FROM test_table";
 			ResultSet rs = stmt.executeQuery(sql);
 
 
