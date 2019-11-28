@@ -13,13 +13,13 @@ public class LoginAction extends ActionSupport {
 	public String execute() throws SQLException {
 		String ret = ERROR ;
 
-		LordingDAO dao = new LoginDAO();
-		LordingDTO dto = new LoginDTO();
+		LoginDAO dao = new LoginDAO();
+		LoginDTO dto = new LoginDTO();
 
 		dto = dao.select(name, password);
 
-		if(name == dto.getName()) {
-			if(password == dto.getPassword()) {
+		if(name.equals(dto.getName())) {
+			if(password.equals(dto.getPassword())) {
 				ret = SUCCESS ;
 			}
 		}
@@ -27,14 +27,14 @@ public class LoginAction extends ActionSupport {
 		return ret;
 	}
 
-	public void getName() {
+	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public void getPassword() {
+	public String getPassword() {
 		return password;
 	}
 	public void setPassword(String password) {
