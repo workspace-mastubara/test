@@ -1,1 +1,1 @@
-[[{"location":"C:\\Users\\internousdev\\Desktop\\workspace\\workspace-matsubara\\test\\TestDB2","type":"PROJECT","hints":{"PROJECT_NAME":"TestDB2"}},"ABSENT"],[{"location":"C:\\pleiades\\java\\8","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.8"}},"jre:jre:1.8.0"]]
+[[{"location":"C:\\Users\\internousdev\\Desktop\\workspace\\workspace-matsubara\\test\\webProj\\WebContent\\WEB-INF\\lib\\xwork-core-2.3.37.jar","type":"JAR","hints":{}},"org.apache.struts.xwork:xwork-core:2.3.37"]]
