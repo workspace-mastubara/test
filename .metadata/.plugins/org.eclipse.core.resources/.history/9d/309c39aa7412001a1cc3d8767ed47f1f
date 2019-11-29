@@ -1,0 +1,10 @@
+package com.internousdev.login3.action;
+import java.sql.SQLException;
+import com.internousdev.login3.dao.*;
+import com.internousdev.login3.dto.*;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginAction extends ActionSupport {
+
+
+}

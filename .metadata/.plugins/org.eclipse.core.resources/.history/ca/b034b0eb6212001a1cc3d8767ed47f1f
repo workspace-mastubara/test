@@ -1,0 +1,143 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+public class TestUserDAO {
+	String name = "";
+	String password = "";
+
+	public void select (String name, String password) {
+		DBConnector2 db = new  DBConnector2();
+		Connection con = db.getConnect();
+
+		String sql = "select * from test_table where name=? and password=?";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+				ps.setString(1, name);
+				ps.setString(2, password);
+				ResultSet rs = ps.executeQuery();
+			if(rs.next()){
+				System.out.println(rs.getString("name"));
+				System.out.println(rs.getString("password"));
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			con.close();
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	public void selectAll (){
+		DBConnector2 db = new DBConnector2();
+		Connection con = db.getConnect();
+
+		String sql = "select * from test_table";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+
+			while(rs.next()){
+				System.out.println(rs.getString("name"));
+				System.out.println(rs.getString("password"));
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			con.close();
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	public void selectByName(String name) {
+		DBConnector2 db = new DBConnector2();
+		Connection con = db.getConnect();
+
+		String sql="select * from test_table where name=?";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, name);
+			ResultSet rs = ps.executeQuery();
+
+			while(rs.next()) {
+				System.out.println(rs.getString("name"));
+				System.out.println(rs.getString("password"));
+			}
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+
+		try {
+			con.close();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+	}
+
+	public void selectByPassword(String password){
+		DBConnector2 db = new DBConnector2();
+		Connection con = db.getConnect();
+		String sql = "select * from test_table where password=?";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, password);
+			ResultSet rs = ps.executeQuery();
+
+			while(rs.next()){
+				System.out.println(rs.getString("name"));
+				System.out.println(rs.getString("password"));
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			con.close();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+	}
+
+	public void UpDateNameByName(String oldName, String newName){
+		DBConnector2 db = new DBConnector2();
+		Connection con = db.getConnect();
+		String sql = "update test_table set name=? where name=?";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, oldName);
+			ps.setString(2, newName);
+
+			int i = ps.executeUpdate();
+
+			if(i > 0){
+				System.out.println(i + "件更新されました。");
+			} else {
+				System.out.println("該当するデータはありませんでした。");
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			con.close();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+	}
+
+}
