@@ -21,10 +21,10 @@ public class TestUserDAO {
 			ps.setString(2, password);
 			ResultSet rs = ps.executeQuery();
 
-		if(rs.next()) {
-			System.out.println(rs.getString("user_name"));
-			System.out.println(rs.getString("password"));
-		}
+			if(rs.next()) {
+				System.out.println(rs.getString("user_name"));
+				System.out.println(rs.getString("password"));
+			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
