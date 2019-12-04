@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="18 個のリソースを削除" deleteContents="false" description="18 個のリソースを削除" element1="/Capsule" element10="/Person" element11="/Person2" element12="/Rensyu" element13="/sample" element14="/Servers" element15="/TestDB" element16="/TestDB2" element17="/TestPtoject01" element18="/Webproj" element2="/HelloJSP" element3="/HelloServlet" element4="/human" element5="/Iphone" element6="/Iphone2" element7="/login" element8="/login2" element9="/login3" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="18" stamp="1575276926976"/>
+</session>

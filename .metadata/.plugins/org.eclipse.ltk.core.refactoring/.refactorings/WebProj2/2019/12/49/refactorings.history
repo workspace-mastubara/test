@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="&apos;testdb.sql&apos; を &apos;sql&apos; に移動" description="&apos;testdb.sql&apos; を &apos;sql&apos; に移動" destination="sql" element1="testdb.sql" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1575340221039" updateReferences="true"/>
+</session>
