@@ -31,6 +31,13 @@ public class TestDAO {
 				dto.setPassword(password);
 				LoginDTOList.add(dto);
 			}
+
+			if(LoginDTOList.size() <= 0){
+				LoginDTO dto = new LoginDTO();
+				dto.setUsername("該当なし");
+				dto.setPassword("該当なし");
+				LoginDTOList.add(dto);
+			}
 		} catch(SQLException e) {
 			e.printStackTrace();
 		} try {
@@ -39,6 +46,34 @@ public class TestDAO {
 			e.printStackTrace();
 		}
 		return LoginDTOList;
+	}
+
+
+	public int insert(String username, String password) {
+		int ret = 0;
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnect();
+
+		String sql = "insert into users(user_name,password) values (?,?)";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, username);
+			ps.setString(2, password);
+			int i = ps.executeUpdate();
+
+			if(i > 0){
+				System.out.println(i + "件登録されました");
+				ret = i;
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} try {
+			con.close();
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return ret;
 	}
 
 }
