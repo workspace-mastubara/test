@@ -1,0 +1,19 @@
+package com.internousdev.webproj52.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+
+import com.internousdev.webproj52.dao.HelloStrutsDAO;
+
+
+public class HelloStrutsAction extends ActionSupport{
+
+	public String execute(){
+		return SUCCESS;
+
+
+	}
+
+}

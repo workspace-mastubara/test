@@ -1,0 +1,6 @@
+package com.internousdev.webproj52.action;
+
+
+public class WelcomeCompleteAction {
+
+}

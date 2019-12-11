@@ -1,0 +1,12 @@
+package com.internousdev.webproj52.action;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.internousdev.webproj52.dto.TestDTO;
+import com.internousdev.webproj52.dao.TestDAO;
+
+public class TestAction {
+
+}

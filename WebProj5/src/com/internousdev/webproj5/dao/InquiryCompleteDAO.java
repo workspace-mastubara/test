@@ -46,7 +46,7 @@ public class InquiryCompleteDAO {
 		Connection con = db.getConnect();
 		int ret = 0;
 
-		String sql = "insert into inquiry value(?,?,?)";
+		String sql = "insert into inquiry values(?,?,?)";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);

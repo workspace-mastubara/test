@@ -5,4 +5,5 @@
 <fullyQualifiedTypeName name="com.internousdev.webproj4.dto.LoginDTO"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,28 @@
+package com.internousdev.template.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+
+import com.internousdev.template.dto.BuyItemDTO;
+import com.internousdev.template.util.*;
+
+public class BuyItemDAO {
+	public BuyItemDTO getBuyItemInfo(){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+		BuyItemDTO buyItemDTO = new BuyItemDTO();
+
+		String sql = "select id,item_name from item_info_transaction";
+
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+
+
+		}
+	}
+
+
+}

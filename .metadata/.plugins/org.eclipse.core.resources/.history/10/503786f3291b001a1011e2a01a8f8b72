@@ -1,0 +1,26 @@
+package com.internousdev.webproj52.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.SessionAware;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import com.internousdev.webproj52.dto.InquiryDTO;
+import com.internousdev.webproj52.dao.InquiryDAO;
+import com.internousdev.webproj52.util.DBConnector;
+
+public
+
+
+public class InquiryCompleteAction extends ActionSupport{
+	private String name;
+	private String qtype;
+	private String body;
+
+	public String execute(){
+		return SUCCESS;
+	}
+}
