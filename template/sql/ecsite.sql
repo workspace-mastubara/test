@@ -30,10 +30,10 @@ create table user_buy_item_transaction(
 	item_transaction_id int,
 	total_price int,
 	total_count int,
-	user_mastar_id varchar(16),
+	user_master_id varchar(16),
 	pay varchar(30),
-	insert_data datetime,
-	update_data datetime);
+	insert_date datetime,
+	update_date datetime);
 
 
 INSERT INTO item_info_transaction(item_name,item_price,item_stock)VALUES
