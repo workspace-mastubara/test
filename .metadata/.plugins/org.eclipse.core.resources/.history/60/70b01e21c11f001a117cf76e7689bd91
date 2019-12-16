@@ -1,0 +1,19 @@
+package com.internousdev.template2.dao;
+
+import java.sql.Connection;
+
+import com.internousdev.template2.dto.MyPageDTO;
+import com.internousdev.template2.util.DBConnector;
+
+
+public class MyPageDAO {
+
+	public MyPageDTO getMyPageUserInfo(String itemId, String masterId){
+		DBConnector db = new DBCOnnector();
+		Connection con = db.getConnection();
+		MyPageDTO dto = new MyPageDTO();
+
+		String sql = "SELECT itemit.item_name, userbit.total_price, userbit.total_count, userbit.pay, FROM userbit Left JOIN itemit ON userbit.user_master_id = ? ORDER BY userbit.insert_date DESC";
+	}
+
+}

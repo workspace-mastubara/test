@@ -1,0 +1,5 @@
+package com.internosudev.ecsite.dao;
+
+public class LoginAction {
+
+}

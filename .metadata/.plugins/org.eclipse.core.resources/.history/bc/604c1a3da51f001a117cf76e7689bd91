@@ -1,0 +1,28 @@
+package com.internousdev.template2.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.template2.dao.UserCreateCompleteDAO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class UserCreateCompleteAction extends ActionSupport implements SessionAware{
+	private String loginId;
+	private String loginPass;
+	private String userName;
+	private Map<String, Object>session;
+
+	public String execute(){
+		UserCreateCompleteDAO dao = new UserCreateCompleteDAO();
+		dao.createUser(session.get("loginId").toString(),
+				session.get("loginPass").toString(),
+				session.get("userName").toString());
+		String result = SUCCESS;
+
+		return result;
+	}
+
+
+
+}
