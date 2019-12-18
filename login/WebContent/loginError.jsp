@@ -9,5 +9,8 @@
 </head>
 <body>
 	<h1>ログインに失敗しました。</h1>
+	【入力内容を確認してください】<br>
+	ユーザー名：<s:property value="name"/><br>
+	パスワード：<s:property value="password"/><br>
 </body>
 </html>

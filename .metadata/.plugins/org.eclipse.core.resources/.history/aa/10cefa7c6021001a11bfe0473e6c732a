@@ -1,0 +1,24 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class ListPractice {
+	private List<ListPractice> personList = new ArrayList<ListPractice>();
+
+	private Person sato = new Person("sato", 28);
+	private Person monzen = new Person("monzen", 22);
+	private Person suzuki = new Person("suzuki", 31);
+
+	personList.add(sato);
+	personList.add(monzen);
+	personList.add(suzuki);
+
+	for(String s: personList){
+		System.out.println(s.getName() + "は" + s.getAge() + "才<br>");
+	}
+
+
+
+
+
+}
+

@@ -1,0 +1,5 @@
+public class ListPractice {
+	Person sato = new Person();
+
+
+}

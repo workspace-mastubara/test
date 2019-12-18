@@ -214,3 +214,5 @@
 0:0:0:0:0:0:0:1 - - [16/Dec/2019:15:44:07 +0900] "GET /template2/HomeAction.action HTTP/1.1" 200 1108
 0:0:0:0:0:0:0:1 - - [16/Dec/2019:15:44:12 +0900] "POST /template2/LoginAction.action HTTP/1.1" 200 1637
 0:0:0:0:0:0:0:1 - - [16/Dec/2019:15:44:17 +0900] "GET /template2/HomeAction.action HTTP/1.1" 200 1108
+127.0.0.1 - - [16/Dec/2019:17:01:58 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [16/Dec/2019:17:02:00 +0900] "GET /ecsite/ HTTP/1.1" 500 2976

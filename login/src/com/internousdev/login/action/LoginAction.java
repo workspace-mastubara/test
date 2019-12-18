@@ -23,7 +23,6 @@ public class LoginAction extends ActionSupport {
 				ret = SUCCESS ;
 			}
 		}
-
 		return ret;
 	}
 

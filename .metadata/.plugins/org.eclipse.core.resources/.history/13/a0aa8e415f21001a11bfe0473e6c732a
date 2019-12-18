@@ -1,0 +1,8 @@
+
+public class ListPractice {
+	
+	for(String name, int age: ){
+		System.out.println(personList.);
+	}
+
+}

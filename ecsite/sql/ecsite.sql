@@ -1,10 +1,10 @@
 set names utf8;
 set foreign_key_checks = 0;
 
-drop database if exists ecsite_m;
+drop database if exists matsubara;
 
-create database if not exists ecsite_m;
-use ecsite_m;
+create database if not exists matsubara;
+use matsubara;
 
 
 drop table if exists login_user_transaction;
@@ -33,7 +33,7 @@ id int not null primary key auto_increment,
 item_transaction_id int,
 total_price int,
 total_count int,
-user_masrer_id varchar(16),
+user_master_id varchar(16),
 pay varchar(30),
 insert_date datetime,
 updated_date datetime);

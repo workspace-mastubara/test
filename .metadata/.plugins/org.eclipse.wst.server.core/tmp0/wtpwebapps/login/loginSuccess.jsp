@@ -9,5 +9,6 @@
 </head>
 <body>
 	<h1>ログインに成功しました。</h1>
+	<s:property value="name"/>さんおめでとう！
 </body>
 </html>
