@@ -10,9 +10,9 @@
 <body>
 	<h3>ログインに失敗しました</h3>
 
-	【入力内容を確認してください】
-	ユーザー名：<s:iterator value="session.name"/>
-	パスワード：<s:iterator value="session.pass"/>
+	【入力内容を確認してください】<br>
+	ユーザー名：<s:property value="name"/><br>
+	パスワード：<s:property value="password"/>
 
 </body>
 </html>

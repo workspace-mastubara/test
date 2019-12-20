@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h3>ログインに成功しました</h3>
-	<s:iterator value="session.name"/>さん、おめでとう！
+	<s:property value="name"/>さん、おめでとう！
 
 </body>
 </html>

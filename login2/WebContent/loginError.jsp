@@ -4,10 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=UTF-8">
+<meta charset="UTF-8">
 <title>ログイン失敗画面</title>
 </head>
 <body>
 	<h1>ログインに失敗しました。</h1>
+	【入力内容を確認してください】
+	ユーザー名：<s:property value="name"/>
+	パスワード：<s:property value="password"/>
 </body>
 </html>

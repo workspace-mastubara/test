@@ -1,0 +1,23 @@
+package com.internousdev.ecsite.action;
+
+import com.internousdev.ecsite.dao.itemListDAO;
+import com.internousdev.ecsite.dto.itemInfoDTO;
+import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
+
+public class itemListAction {
+	private itemListDAO dao = new itemListDAO();
+	private itemInfoDTO dto = new itemInfoDTO();
+	private Map<String, Object> session;
+	private List<itemInfoDTO> dtoList = new ArrayList<itemInfoDTO>();
+
+	public String execute(){
+		dto = dao.getItemInfo();
+
+
+	}
+
+
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTO Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<constant name="struts.devMode" value="true"/>
+<package name="com.internousdev.multi.action" extends="struts-default">
+
+	<action name="multipleDisplayAction" class="com.internousdev.multi.action.multipleDisplayAction" method="execute">
+		<result name="success">multiDisplay.jsp</result>
+	</action>
+
+</package>
+</struts>

@@ -1,0 +1,11 @@
+package com.internousdev.ecsite.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.SessionAware;
+
+public class itemCreateConfirmAction extends ActionSupport implements SessionAware{
+	private String itemName;
+	private String itemPrice;
+	private String itemStock;
+
+}

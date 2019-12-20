@@ -1,0 +1,12 @@
+package com.internousdev.ecsite.dao;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+public class itemCreateConfirmDAO {
+
+	public itemCreate(String itemName, int itemPrice, int itemStock){
+		DBConnector db = new DBConnector();
+
+	}
+
+}
