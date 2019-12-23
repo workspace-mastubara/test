@@ -7336,3 +7336,9 @@ Binding(ALT+CTRL+SPACE,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2019-12-23 13:39:13.345
+!MESSAGE ディレクトリー C:\Users\internousdev\Desktop\workspace\workspace-matsubara\test\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Multi\META-INF を作成できませんでした。
+
+!ENTRY org.eclipse.wst.server.core 4 0 2019-12-23 14:02:56.502
+!MESSAGE サーバー ローカル・ホスト の Tomcat8 (Java8) は 45 秒内に始動できませんでした。サーバーがより多くの時間を必要とする場合、サーバー・エディターでタイムアウトを大きくしてください。

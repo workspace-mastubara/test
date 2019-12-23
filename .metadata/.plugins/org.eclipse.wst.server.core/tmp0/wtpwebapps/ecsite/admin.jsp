@@ -9,10 +9,10 @@
 </head>
 <body>
 	商品
-		<s:form action="itemCreateAction">
+		<s:form action="ItemCreateAction">
 			<s:submit value="新規登録"/>
 		</s:form>
-		<s:form action="itemListAction">
+		<s:form action="ItemListAction">
 			<s:submit value="一覧"/>
 		</s:form>
 	ユーザー<br>
