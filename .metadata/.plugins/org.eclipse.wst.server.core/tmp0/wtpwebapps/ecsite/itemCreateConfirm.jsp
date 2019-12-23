@@ -8,10 +8,10 @@
 <title>ItemCreateComplete</title>
 </head>
 <body>
-	
 
-	<s:form action="itemListDeleteCompleteAction">
-		
+
+	<s:form action="ItemCreateCompleteAction">
+
 		<s:submit value="完了"/>
 	</s:form>
 

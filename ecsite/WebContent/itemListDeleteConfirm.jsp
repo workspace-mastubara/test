@@ -13,12 +13,12 @@
 		<s:property value="message"/><br><br>
 	</s:if>
 
-	<s:form action="itemListDeleteCompleteAction">
+	<s:form action="ItemListDeleteCompleteAction">
 		<input type="hidden" name="deleteFlg" value='<s:property value="#session.deleteFlg"/>'>
 		<s:submit value="ＯＫ"/>
 	</s:form>
 
-	<s:form action="itemListAction">
+	<s:form action="ItemListAction">
 		<s:submit value="キャンセル"/>
 	</s:form>
 

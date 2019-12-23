@@ -8,7 +8,7 @@
 <title>ItemCreateConfirm</title>
 </head>
 <body>
-	<s:form action="itemCreateConfirmAction">
+	<s:form action="ItemCreateConfirmAction">
 		<s:textfield name="itemName"/>
 		<s:textfield name="itemPrice"/>
 		<s:textfield name="itemStock"/>

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>INDEX</title>
+<title>ADMIN</title>
 </head>
 <body>
 	商品
@@ -16,10 +16,10 @@
 			<s:submit value="一覧"/>
 		</s:form>
 	ユーザー<br>
-		<s:form action="userCreateAction">
+		<s:form action="UserCreateAction">
 			<s:submit value="新規登録"/>
 		</s:form>
-		<s:form action="itemListAction">
+		<s:form action="UserListAction">
 			<s:submit value="一覧"/>
 		</s:form>
 
