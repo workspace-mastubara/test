@@ -14,7 +14,7 @@ public class BuyItemDAO {
 		Connection con = db.getConnect();
 		BuyItemDTO buyItemDTO = new BuyItemDTO();
 
-		String sql = "SELECT id, item_name, item_price FROM item_info_transaction";
+		String sql = "SELECT id, item_name, item_price, item_stock FROM item_info_transaction";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -24,6 +24,7 @@ public class BuyItemDAO {
 				buyItemDTO.setId(rs.getInt("id"));
 				buyItemDTO.setItemName(rs.getString("item_name"));
 				buyItemDTO.setItemPrice(rs.getString("item_price"));
+				buyItemDTO.setStock(rs.getInt("item_stock"));
 			}
 		} catch(Exception e){
 			e.printStackTrace();
@@ -32,4 +33,7 @@ public class BuyItemDAO {
 		return buyItemDTO;
 	}
 
+
 }
+
+

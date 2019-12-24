@@ -14,7 +14,8 @@ public class BuyItemCompleteDAO {
 		Connection con = db.getConnect();
 		DateUtil dateUtil = new DateUtil();
 
-		String sql = "INSERT INTO user_buy_item_transaction(item_transaction_id, total_price, total_count, user_master_id, pay, insert_date) VALUES(?,?,?,?,?,?)";
+		String sql = "INSERT INTO user_buy_item_transaction(item_transaction_id, total_price, total_count, user_master_id, pay, insert_date) "
+				+ "VALUES(?,?,?,?,?,?)";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -30,6 +31,26 @@ public class BuyItemCompleteDAO {
 			e.printStackTrace();
 		} finally {
 			con.close();
+		}
+	}
+
+
+	public  void stockControl(int count, String id){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnect();
+
+		String sql = "UPDATE item_info_transaction "
+				+ "SET item_stock = item_stock - ? "
+				+ "WHERE id = ?";
+
+		try{
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setInt(1, count);
+			ps.setString(2, id);
+			ps.executeUpdate();
+
+		} catch(Exception e){
+			e.printStackTrace();
 		}
 	}
 

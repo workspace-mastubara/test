@@ -42,4 +42,30 @@ public class LoginDAO {
 		return loginDTO;
 	}
 
+	public LoginDTO alredyRegist(String loginUserId){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnect();
+		LoginDTO loginDTO = new LoginDTO();
+
+		String sql = "SELECT * FROM login_user_transaction WHERE login_id = ?";
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setString(1, loginUserId);
+			ResultSet rs = ps.executeQuery();
+
+			if(rs.next()){
+				loginDTO.setLoginId(rs.getString("login_id"));
+			}
+
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} try {
+			con.close();
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+
+		return loginDTO;
+	}
+
 }

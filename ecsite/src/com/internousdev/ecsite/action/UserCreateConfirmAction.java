@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.ecsite.dao.LoginDAO;
+import com.internousdev.ecsite.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class UserCreateConfirmAction extends ActionSupport implements SessionAware{
@@ -12,6 +14,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	private String userName;
 	private Map<String, Object>session;
 	private String errorMessage;
+	private LoginDAO loginDAO = new LoginDAO();
 
 
 	public String execute(){
@@ -25,6 +28,12 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 			session.put("userName", userName);
 		} else {
 			setErrorMessage("未入力の項目があります。");
+			result = ERROR;
+		}
+
+
+		if(loginUserId.equals(((LoginDTO)loginDAO.alredyRegist(loginUserId)).getLoginId())){
+			setErrorMessage("すでに登録されているログインIDです。");
 			result = ERROR;
 		}
 		return result;

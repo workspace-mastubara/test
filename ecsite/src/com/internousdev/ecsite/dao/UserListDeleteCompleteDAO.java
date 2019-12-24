@@ -11,12 +11,13 @@ public class UserListDeleteCompleteDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnect();
 
-		String sql = "DELETE FROM login_user_transaction "
-				+ "WHERE admin_flg != 'a'";
+		String sql = "DELETE FROM login_user_transaction WHERE admin_flg IS NULL";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.execute();
+			ps.executeUpdate();
+
+
 		} catch(SQLException e){
 			e.printStackTrace();
 		} try {

@@ -23,6 +23,10 @@
 				<td><s:property value="itemName"/></td>
 				<td><s:property value="itemPrice"/></td>
 				<td><s:property value="itemStock"/></td>
+				<td>
+					<a href='<s:url action="ItemDetailsAction">
+					<s:param name="id" value="%{id}"/></s:url>'>詳細</a>
+				</td>
 			</tr>
 		</s:iterator>
 

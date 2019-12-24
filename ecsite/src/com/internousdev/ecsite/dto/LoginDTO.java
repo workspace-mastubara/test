@@ -40,7 +40,6 @@ public class LoginDTO {
 	public String getAdminFlg(){
 		return this.adminFlg;
 	}
-
 	public void setAdminFlg(String adminFlg){
 		this.adminFlg = adminFlg;
 	}

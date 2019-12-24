@@ -8,24 +8,26 @@ import com.internousdev.ecsite.dao.UserListDeleteCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class UserListDeleteCompleteAction extends ActionSupport implements SessionAware{
-	private int deleteFlg;
+	private String deleteFlg;
 	private Map<String, Object>session;
 	private UserListDeleteCompleteDAO dao = new UserListDeleteCompleteDAO();
 
 
 	public String execute(){
-		if(deleteFlg == 1){
+		System.out.println(deleteFlg);
+		if(deleteFlg.equals("1")){
 			dao.userListDelete();
-			session.put("deleteFlg", deleteFlg);
+
+			System.out.println(session.get("deleteFlg"));
 		}
 
 		return SUCCESS;
 	}
 
-	public int getDeleteFlg(){
+	public String getDeleteFlg(){
 		return this.deleteFlg;
 	}
-	public void setDeleteFlg(int deleteFlg){
+	public void setDeleteFlg(String deleteFlg){
 		this.deleteFlg = deleteFlg;
 	}
 

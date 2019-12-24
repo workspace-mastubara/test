@@ -1,0 +1,18 @@
+package com.internousdev.ecsite.dao;
+
+import java.sql.Connection;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+
+public class ItemDetailsDAO {
+
+	public void itemDetail(String id){
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+
+
+	}
+
+
+}

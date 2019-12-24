@@ -13,16 +13,22 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 	private BuyItemCompleteDAO buyItemCompleteDAO = new BuyItemCompleteDAO();
 
 
-	public String execute() throws SQLException{
-		buyItemCompleteDAO.buyItemInfo(
-			session.get("id").toString(),
-			session.get("total_price").toString(),
-			session.get("count").toString(),
-			session.get("login_user_id").toString(),
-			session.get("pay").toString());
 
-		String result = SUCCESS;
-		return result;
+	public String execute() throws SQLException{
+
+			buyItemCompleteDAO.buyItemInfo(
+					session.get("id").toString(),
+					session.get("total_price").toString(),
+					session.get("count").toString(),
+					session.get("login_user_id").toString(),
+					session.get("pay").toString());
+
+			buyItemCompleteDAO.stockControl(
+					Integer.parseInt(session.get("count").toString()),
+					session.get("id").toString());
+
+
+		return SUCCESS;
 	}
 
 
@@ -32,5 +38,7 @@ public class BuyItemConfirmAction extends ActionSupport implements SessionAware{
 	public void setSession(Map<String, Object> session){
 		this.session = session;
 	}
+
+	
 
 }

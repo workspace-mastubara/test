@@ -17,6 +17,11 @@
 		</div>
 
 		<div>
+
+		<s:if test="message != null">
+			<s:property value="message"/>
+		</s:if>
+
 			<s:form action="BuyItemAction">
 			<table>
 				<tr>
@@ -38,11 +43,11 @@
 					<td><span>購入個数</span></td>
 					<td>
 						<select name="count">
-							<option value="1" selected="selected">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
+							<% for(int i = 1; i <= 50; i++){ %>
+								<option>
+									<%= i + "<br>"%>
+								</option>
+							<% } %>
 						</select>
 					</td>
 				</tr>
