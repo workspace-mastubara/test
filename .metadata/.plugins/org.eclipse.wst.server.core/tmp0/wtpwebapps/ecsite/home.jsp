@@ -21,9 +21,11 @@
 				<s:submit value="商品購入"/>
 			</s:form>
 
-			<s:form action="AdminAction">
-				<s:submit value="管理者"/>
-			</s:form>
+			<s:if test='session.adminFlg == "a"'>
+				<s:form action="AdminAction">
+					<s:submit value="管理者"/>
+				</s:form>
+			</s:if>
 
 
 			<s:if test="#session.login_user_id != null">

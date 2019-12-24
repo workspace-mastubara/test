@@ -29,7 +29,7 @@
 		</tbody>
 	</table>
 
-		<s:form action="ItemListDeleteConfirmAction">
+		<s:form action="UserListDeleteConfirmAction">
 			<input type="hidden" name="deleteFlg" value="1">
 			<s:submit value="削除"/>
 		</s:form>

@@ -31,10 +31,6 @@ public class UserListDAO {
 				dto.setLoginId(rs.getString("login_id"));
 				dto.setUserName(rs.getString("user_name"));
 
-				System.out.println(dto.getId());
-				System.out.println(dto.getLoginId());
-				System.out.println(dto.getUserName());
-
 				dtoList.add(dto);
 
 			}

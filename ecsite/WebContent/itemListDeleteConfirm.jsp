@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>itemListDeleteConfirm</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 	</s:if>
 
 	<s:form action="ItemListDeleteCompleteAction">
-		<input type="hidden" name="deleteFlg" value='<s:property value="#session.deleteFlg"/>'>
+		<input type="hidden" name="deleteFlg" value="1">
 		<s:submit value="ＯＫ"/>
 	</s:form>
 

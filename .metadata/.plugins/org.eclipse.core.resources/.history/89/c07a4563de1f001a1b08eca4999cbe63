@@ -1,9 +1,0 @@
-package com.internosudev.ecsite.dao;
-
-import java.util.Map;
-import org.apache.struts2.interceptor.SessionAware;
-import com.internousdev.
-
-public class LoginAction {
-
-}

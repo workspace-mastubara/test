@@ -1,0 +1,33 @@
+package com.internousdev.ecsite.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class UserListDeleteConfirmAction extends ActionSupport{
+	private String deleteFlg;
+	private String message;
+
+	public String execute(){
+
+		if(deleteFlg.equals("1")){
+			setMessage("全てのユーザーを削除します。よろしいですか？");
+		}
+
+		return SUCCESS;
+	}
+
+
+	public String getDeleteFlg(){
+		return this.deleteFlg;
+	}
+	public void setDeleteFlg(String deleteFlg){
+		this.deleteFlg = deleteFlg;
+	}
+
+	public String getMessage(){
+		return this.message;
+	}
+	public void setMessage(String message){
+		this.message = message;
+	}
+
+}

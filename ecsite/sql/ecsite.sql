@@ -14,7 +14,8 @@ login_id varchar(16) unique,
 login_pass varchar(16),
 user_name varchar(50),
 insert_date datetime,
-updated_date datetime);
+updated_date datetime,
+admin_flg varchar(1));
 
 
 drop table if exists item_info_transaction;
@@ -42,5 +43,5 @@ updated_date datetime);
 insert into item_info_transaction(item_name, item_price,item_stock) values
 ("ノートBook",100, 50);
 
-insert into login_user_transaction(login_id, login_pass,user_name) values
-("internous", "internous01", "test");
+insert into login_user_transaction(login_id, login_pass,user_name, admin_flg) values
+("internous", "internous01", "test", "a");

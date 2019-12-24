@@ -1,5 +1,6 @@
 package com.internousdev.ecsite.action;
 
+import java.sql.SQLException;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
@@ -13,6 +14,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport implements SessionAware{
 	private String loginUserId;
 	private String loginPassword;
+	private String adminFlg;
 	private Map<String, Object>session;
 	private LoginDAO loginDAO = new LoginDAO();
 	private LoginDTO loginDTO = new LoginDTO();
@@ -20,7 +22,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 
 
-	public String execute(){
+	public String execute() throws SQLException{
 		String result = ERROR;
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
 		session.put("loginUser", loginDTO);
@@ -32,6 +34,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 			session.put("id", buyItemDTO.getId());
 			session.put("buyItem_name", buyItemDTO.getItemName());
 			session.put("buyItem_price", buyItemDTO.getItemPrice());
+			session.put("adminFlg", loginDTO.getAdminFlg());
 			result = SUCCESS;
 			return result;
 		}
@@ -58,6 +61,13 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	}
 	public void setSession(Map<String,Object> session){
 		this.session = session;
+	}
+
+	public String getAdminFlg(){
+		return this.adminFlg;
+	}
+	public void setAdminFlg(String adminFlg){
+		this.adminFlg = adminFlg;
 	}
 
 }

@@ -1,8 +1,0 @@
-set names utf8;
-set foreign_key_cheks = 0;
-
-drop datebase if exists ecsite;
-
-create datebase if not exists ecsite;
-use ecsite;
-
