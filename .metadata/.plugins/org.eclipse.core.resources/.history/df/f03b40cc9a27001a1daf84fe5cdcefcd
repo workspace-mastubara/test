@@ -1,0 +1,49 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import com.internousdev.ecsite.dao.ItemDetailsDAO;
+import com.internousdev.ecsite.dto.ItemInfoDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemDetailsAction extends ActionSupport{
+	private int id;
+	private Map<String, Object>session;
+
+	private ItemDetailsDAO dao = new ItemDetailsDAO();
+	private ItemInfoDTO dto = new ItemInfoDTO();
+
+
+	public String execute(){
+		System.out.println(id);
+
+		dao.itemDetail(id);
+
+		session.put("dto", dto);
+
+		return SUCCESS;
+	}
+
+	public int getId(){
+		return this.id;
+	}
+	public void setId(int id){
+		this.id = id;
+	}
+
+	public ItemInfoDTO getDto(){
+		return this.dto;
+	}
+	public void setDto (ItemInfoDTO dto){
+		this.dto = dto;
+	}
+
+	public Map<String, Object> getSession(){
+		return this.session;
+	}
+
+	public void setSession(Map<String, Object> session){
+		this.session = session;
+	}
+
+}

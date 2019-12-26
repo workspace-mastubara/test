@@ -15,6 +15,7 @@ public class UserListAction extends ActionSupport {
 	private List<UserInfoDTO> dtoList = new ArrayList<UserInfoDTO>();
 
 	public String execute() throws SQLException{
+
 		dtoList = dao.getUserList();
 
 		return SUCCESS;

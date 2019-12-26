@@ -13,13 +13,16 @@
 		<tbody>
 
 		<tr>
+			<th>ID</th>
 			<th>商品名</th>
 			<th>値段</th>
 			<th>在庫</th>
+			<th>詳細</th>
 		</tr>
 
 		<s:iterator value="dtoList">
 			<tr>
+				<td><s:property value="id"/></td>
 				<td><s:property value="itemName"/></td>
 				<td><s:property value="itemPrice"/></td>
 				<td><s:property value="itemStock"/></td>

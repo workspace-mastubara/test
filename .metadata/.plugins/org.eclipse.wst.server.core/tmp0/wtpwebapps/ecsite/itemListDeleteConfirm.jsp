@@ -13,6 +13,7 @@
 		<s:property value="message"/><br><br>
 	</s:if>
 
+
 	<s:form action="ItemListDeleteCompleteAction">
 		<input type="hidden" name="deleteFlg" value="1">
 		<s:submit value="ＯＫ"/>

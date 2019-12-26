@@ -1,0 +1,17 @@
+package com.internousdev.ecsite.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+import com.internousdev.ecsite.dao.ItemDetailsDAO;
+
+public class ItemDetailsAction extends ActionSupport{
+	private int id;
+	private ItemDetailsDAO dao = new ItemDetailsDAO();
+
+	public String execute(){
+		dao.itemDetail(id);
+
+		return SUCCESS;
+	}
+
+}
