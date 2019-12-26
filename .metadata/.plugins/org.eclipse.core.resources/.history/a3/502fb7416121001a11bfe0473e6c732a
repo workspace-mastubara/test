@@ -1,6 +1,0 @@
-public class ListPractice {
-	Person sato = new Person("sato", 28);
-
-
-
-}

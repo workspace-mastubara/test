@@ -1,3 +1,0 @@
-INDEX VERSION 1.127
-C:\Users\internousdev\Desktop\workspace\workspace-matsubara\test\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3082098993.index
-\ecsite\src

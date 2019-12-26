@@ -1,8 +1,0 @@
-package com.internousdev.ecsite.dto;
-
-public class UserInfoDTO {
-	private int id;
-	private String loginId;
-	private String userName;
-
-}
