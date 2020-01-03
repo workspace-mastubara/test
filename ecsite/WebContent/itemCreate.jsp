@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ItemCreateConfirm</title>
+<title>ItemCreate</title>
 </head>
 <body>
 	<s:form action="ItemCreateConfirmAction">
-		<s:textfield name="itemName"/>
-		<s:textfield name="itemPrice"/>
-		<s:textfield name="itemStock"/>
+		<s:textfield name="itemName" label="商品名"/>
+		<s:textfield name="itemPrice" label="値段　"/>
+		<s:textfield name="itemStock" label="個数　"/>
 		<s:submit value="登録"/>
 	</s:form>
 
