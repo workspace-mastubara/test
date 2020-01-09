@@ -56,16 +56,17 @@ public class PurchaseHistoryDAO {
 
 
 
-	public int deletePurchaseHistoryList(){
+	public int deletePurchaseHistoryList(String useId){
 		int deleteHistoryCount = 0;
 	}
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-		String sql = "DELETE FROM purchase_history_info";
+		String sql = "DELETE FROM purchase_history_info WHERE userId = ?";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
+			ps.set
 			deleteHistoryCount = ps.executeUpdate();
 
 		} catch(SQLException e){

@@ -1,4 +1,4 @@
-package jp.co.internous.action;
+package com.internousdev.sample.action;
 
 public class Main {
 	public static void main(String[] args){
