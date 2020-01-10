@@ -4,19 +4,19 @@ package com.internousdev.sample.action;
 public class PurchaseHistoryInfoAction {
 	private int totalPrice;
 
-	/*public String execute() {*/
+	public String execute() {
 
-	/*	if(userId.equals(purchaseHistoryInfoDTO.getUserId())) {
-			purchaseHistoryInfoDTOList = purchaseHistoryInfoDAO.getPurchaseHistoryInfoList(userId);*/
+		if(userId.equals(purchaseHistoryInfoDTO.getUserId())) {
+			purchaseHistoryInfoDTOList = purchaseHistoryInfoDAO.getPurchaseHistoryInfoList(userId);
 
 			totalPrice = purchaseHistoryInfoDTO.getPrice() + purchaseHistoryInfoDTO.getProductCount();
 
-/*		} else {
+		} else {
 			setMessage("商品購入履歴情報はありません。");
 		}
 
 		return SUCCESS;
-	}*/
+	}
 
 	public int getTotalPrice() {
 		return this.totalPrice;
