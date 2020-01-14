@@ -1,4 +1,4 @@
-package com.internousdev.latte.util;
+package com.internousdev.Test.util;
 
 public class CommonUtility {
 	/**

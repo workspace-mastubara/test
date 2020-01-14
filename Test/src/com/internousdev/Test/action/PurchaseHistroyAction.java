@@ -1,10 +1,10 @@
-package com.internousdev.latte.action;
+package com.internousdev.Test.action;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.internousdev.latte.dao.PurchaseHistoryInfoDAO;
-import com.internousdev.latte.dto.PurchaseHistoryInfoDTO;
+import com.internousdev.Test.dao.PurchaseHistoryInfoDAO;
+import com.internousdev.Test.dto.PurchaseHistoryInfoDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class PurchaseHistroyAction extends ActionSupport {

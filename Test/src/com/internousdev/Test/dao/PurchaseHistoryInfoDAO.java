@@ -1,4 +1,4 @@
-package com.internousdev.latte.dao;
+package com.internousdev.Test.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.internousdev.latte.dto.PurchaseHistoryInfoDTO;
-import com.internousdev.latte.util.DBConnector;
+import com.internousdev.Test.dto.PurchaseHistoryInfoDTO;
+import com.internousdev.Test.util.DBConnector;
 
 
 public class PurchaseHistoryInfoDAO {

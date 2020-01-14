@@ -1,8 +1,8 @@
 /**
- * 
+ *
  */
 /**
  * @author インターノウス
  *
  */
-package com.internousdev.latte.util;
+package com.internousdev.Test.util;

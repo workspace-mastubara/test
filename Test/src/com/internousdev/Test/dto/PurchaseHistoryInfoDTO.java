@@ -1,4 +1,4 @@
-package com.internousdev.latte.dto;
+package com.internousdev.Test.dto;
 
 public class PurchaseHistoryInfoDTO {
 	private int id;
