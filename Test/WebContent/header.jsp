@@ -45,8 +45,8 @@
 	</s:form>
 
 <s:form action="MyPageAction">
-<input type="hidden" name="userId" value="hanako"/>
-	<input type="button" value="マイページ" />
+<input type="hidden" name="userId" value="taro"/>
+	<s:submit value="マイページ" />
 </s:form>
 
 </body>
