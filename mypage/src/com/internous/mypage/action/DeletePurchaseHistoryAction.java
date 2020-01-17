@@ -16,6 +16,7 @@ public class DeletePurchaseHistoryAction extends ActionSupport {
 	public String execute() {
 		PurchaseHistoryInfoDAO purchaseHistoryInfoDAO = new PurchaseHistoryInfoDAO();
 		String res = ERROR;
+
 		/*String temporaryUserId = String.valueOf(session.get("randomId"));*/
 		/*loginFlg = Integer.parseInt(session.get("loginFrg").toString());
 */
@@ -26,7 +27,10 @@ public class DeletePurchaseHistoryAction extends ActionSupport {
 
 		int deleteCount = purchaseHistoryInfoDAO.deletePurchaseHistoryList(userId);
 		if(deleteCount > 0) {
-			purchaseHistoryInfoDTOList = null;
+
+			//削除が成功したらListの要素を全て空にする
+			purchaseHistoryInfoDTOList.clear();
+
 			res = SUCCESS;
 		}
 
