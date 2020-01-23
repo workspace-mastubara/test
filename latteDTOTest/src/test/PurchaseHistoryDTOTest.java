@@ -1,5 +1,11 @@
 package test;
 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import dto.PurchaseHistoryInfoDTO;
+
 public class PurchaseHistoryDTOTest {
 	// test String setImageFileName()
 		@Test
