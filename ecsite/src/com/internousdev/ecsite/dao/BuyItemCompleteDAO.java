@@ -34,7 +34,6 @@ public class BuyItemCompleteDAO {
 		}
 	}
 
-
 	public  void stockControl(int count, String id){
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnect();

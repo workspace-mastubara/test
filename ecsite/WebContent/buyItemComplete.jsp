@@ -9,12 +9,12 @@
 <title>BuyItemComplete画面</title>
 </head>
 <body>
-	<div id="header">
-	</div>
+	<div id="header"></div>
 	<div id="main">
 		<div id="top">
 			<P>BuyItemComplete</P>
 		</div>
+
 		<div>
 			<p>購入手続きが完了致しました。</p>
 			<div>
@@ -24,10 +24,9 @@
 					こちら</a></p>
 			</div>
 		</div>
+	</div>
 
-	</div>
-	<div id="footer">
-	</div>
+	<div id="footer"></div>
 
 </body>
 </html>

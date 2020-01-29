@@ -45,11 +45,6 @@ public class ItemDetailsDAO {
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
-
 		return dto;
-
-
 	}
-
-
 }

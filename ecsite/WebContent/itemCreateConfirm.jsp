@@ -8,12 +8,8 @@
 <title>ItemCreateComplete</title>
 </head>
 <body>
-
-
 	<s:form action="ItemCreateCompleteAction">
-
 		<s:submit value="完了"/>
 	</s:form>
-
 </body>
 </html>

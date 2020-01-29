@@ -1,3 +1,4 @@
+
 package com.internousdev.Test.dao;
 
 import java.sql.Connection;
@@ -17,8 +18,8 @@ public class ProductDetailsFunctionCartInfoDAO {
 	 * カート情報に一致する情報があるか確認するためのメソッド
 	 * (一致すれば購入個数を加算、一致しなければ新たに挿入  !!!この２つのメソッドも下に書く!!!)
 	 * @return カートテーブルのユーザーIDと商品ID
-	 */
-	public CartInfoDTO getCartInfoTiedUserId(String userId, int productId) {
+	 */s
+	public CartInfoDTO getCartInfoLinkUserId(String userId, int productId) {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 

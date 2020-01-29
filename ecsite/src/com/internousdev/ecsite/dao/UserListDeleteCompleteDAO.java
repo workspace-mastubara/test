@@ -17,7 +17,6 @@ public class UserListDeleteCompleteDAO {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.executeUpdate();
 
-
 		} catch(SQLException e){
 			e.printStackTrace();
 		} try {
@@ -26,5 +25,4 @@ public class UserListDeleteCompleteDAO {
 			e.printStackTrace();
 		}
 	}
-
 }

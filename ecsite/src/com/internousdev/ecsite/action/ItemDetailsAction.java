@@ -10,7 +10,6 @@ public class ItemDetailsAction extends ActionSupport{
 	private ItemDetailsDAO dao = new ItemDetailsDAO();
 	private ItemInfoDTO dto = new ItemInfoDTO();
 
-
 	public String execute(){
 		System.out.println(id);
 
@@ -32,6 +31,5 @@ public class ItemDetailsAction extends ActionSupport{
 	public void setDto (ItemInfoDTO dto){
 		this.dto = dto;
 	}
-
 
 }

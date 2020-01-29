@@ -21,7 +21,6 @@ public class UserListDeleteConfirmAction extends ActionSupport implements Sessio
 		return SUCCESS;
 	}
 
-
 	public String getDeleteFlg(){
 		return this.deleteFlg;
 	}

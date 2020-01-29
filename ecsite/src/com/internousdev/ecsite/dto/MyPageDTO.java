@@ -1,7 +1,6 @@
 package com.internousdev.ecsite.dto;
 
 public class MyPageDTO {
-
 	private String itemName;
 	private String totalPrice;
 	private String totalCount;
@@ -57,5 +56,4 @@ public class MyPageDTO {
 	public void setTotalCount(String totalCount){
 		this.totalCount = totalCount;
 	}
-
 }

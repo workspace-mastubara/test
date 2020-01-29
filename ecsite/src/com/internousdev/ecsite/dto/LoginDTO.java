@@ -1,13 +1,11 @@
 package com.internousdev.ecsite.dto;
 
 public class LoginDTO {
-
 	private String loginId;
 	private String loginPassword;
 	private String userName;
 	private boolean loginFlg = false;
 	private String adminFlg;
-
 
 	public String getLoginId(){
 		return this.loginId;
@@ -43,5 +41,4 @@ public class LoginDTO {
 	public void setAdminFlg(String adminFlg){
 		this.adminFlg = adminFlg;
 	}
-
 }

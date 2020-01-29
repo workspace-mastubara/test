@@ -26,15 +26,11 @@ public class ItemCreateCompleteAction extends ActionSupport implements SessionAw
 		return res;
 	}
 
-
-
-
 	public Map<String, Object> getSession(){
 		return this.session;
 	}
 	public void setSession(Map<String, Object> session){
 		this.session = session;
 	}
-
 
 }

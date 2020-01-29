@@ -10,7 +10,6 @@ import java.util.List;
 import com.internousdev.ecsite.dto.UserInfoDTO;
 import com.internousdev.ecsite.util.DBConnector;
 
-
 public class UserListDAO {
 	private List<UserInfoDTO> dtoList = new ArrayList<UserInfoDTO>();
 
@@ -32,7 +31,6 @@ public class UserListDAO {
 				dto.setUserName(rs.getString("user_name"));
 
 				dtoList.add(dto);
-
 			}
 		} catch(SQLException e){
 			e.printStackTrace();
@@ -41,7 +39,6 @@ public class UserListDAO {
  		} catch(SQLException e){
 			e.printStackTrace();
  		}
-
 		return dtoList;
 
 	}

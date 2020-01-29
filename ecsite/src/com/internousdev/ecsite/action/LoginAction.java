@@ -20,8 +20,6 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	private LoginDTO loginDTO = new LoginDTO();
 	private BuyItemDAO buyItemDAO = new BuyItemDAO();
 
-
-
 	public String execute() throws SQLException{
 		String result = ERROR;
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);

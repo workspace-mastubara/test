@@ -20,7 +20,6 @@ public class ItemListDeleteCompleteAction extends ActionSupport implements Sessi
 		return SUCCESS;
 	}
 
-
 	public Map<String, Object> getSession(){
 		return this.session;
 	}
@@ -34,7 +33,5 @@ public class ItemListDeleteCompleteAction extends ActionSupport implements Sessi
 	public void setDeleteFlg(String deleteFlg){
 		this.deleteFlg = deleteFlg;
 	}
-
-
 
 }

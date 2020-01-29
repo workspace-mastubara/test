@@ -41,7 +41,6 @@ public class ItemListDAO {
 		} catch(SQLException e){
 			e.printStackTrace();
 		}
-
 		return dtoList;
 	}
 

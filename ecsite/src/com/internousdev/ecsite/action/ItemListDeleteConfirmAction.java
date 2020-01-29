@@ -22,7 +22,6 @@ public class ItemListDeleteConfirmAction extends ActionSupport implements Sessio
 		return SUCCESS;
 	}
 
-
 	public Map<String, Object> getSession(){
 		return this.session;
 	}

@@ -57,5 +57,4 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 		this.session = session;
 	}
 
-
 }

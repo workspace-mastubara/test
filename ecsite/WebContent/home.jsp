@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +9,7 @@
 <title>Home画面</title>
 </head>
 <body>
-	<div id="header">
-	</div>
+	<div id="header"></div>
 	<div id="main">
 		<div id="top">
 			<P>Home</P>
@@ -18,23 +17,23 @@
 
 		<div id="text-center">
 			<s:form action="HomeAction">
-				<s:submit value="商品購入"/>
+				<s:submit value="商品購入" />
 			</s:form>
 
 			<s:if test='session.adminFlg == "a"'>
 				<s:form action="AdminAction">
-					<s:submit value="管理者"/>
+					<s:submit value="管理者" />
 				</s:form>
 			</s:if>
 
 
 			<s:if test="#session.login_user_id != null">
-				<p>ログアウトする場合は
-					<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
+				<p>
+					ログアウトする場合は <a href='<s:url action="LogoutAction"/>'>こちら</a>
+				</p>
 			</s:if>
 		</div>
 	</div>
-	<div id="footer">
-	</div>
+	<div id="footer"></div>
 </body>
 </html>

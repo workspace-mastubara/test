@@ -23,15 +23,17 @@ public class AddCartAction extends ActionSupport implements SessionAware {
 		int addCount = 0;
 		ProductDetailsFunctionCartInfoDAO productDetailsFunctionCartInfoDAO = new ProductDetailsFunctionCartInfoDAO();
 
-		cartInfoDTO = productDetailsFunctionCartInfoDAO.getCartInfoTiedUserId
+		cartInfoDTO = productDetailsFunctionCartInfoDAO.getCartInfoLinkUserId
 				(session.get("userId").toString(), productId);
 
+
+		//実行エラーでる？？Contains("loginDTO")??
 		if(cartInfoDTO == null) {
 			insertCount = productDetailsFunctionCartInfoDAO.insertCartInfo(session.get("userId").toString(), productId);
 
 				if(insertCount > 0) {
 					// やすさんのメソッド名に合わせる
-					// cartInfoDTO = productDetailsFunctionCartInfoDAO.getCartAndProductInfo(productId);
+					// cartInfoDTOList = productDetailsFunctionCartInfoDAO.getCartAndProductInfo(productId);
 					res = SUCCESS;
 				} else {
 					res = ERROR;

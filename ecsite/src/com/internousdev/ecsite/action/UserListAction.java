@@ -8,8 +8,6 @@ import com.internousdev.ecsite.dao.UserListDAO;
 import com.internousdev.ecsite.dto.UserInfoDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-
-
 public class UserListAction extends ActionSupport {
 	private UserListDAO dao = new UserListDAO();
 	private List<UserInfoDTO> dtoList = new ArrayList<UserInfoDTO>();

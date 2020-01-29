@@ -22,8 +22,5 @@
 		<s:form action="UserListAction">
 			<s:submit value="一覧"/>
 		</s:form>
-
-
-
 </body>
 </html>

@@ -8,8 +8,6 @@ public class ItemInfoDTO {
 	private String insertDate;
 	private String updatedDate;
 
-
-
 	public String getItemName(){
 		return this.itemName;
 	}
@@ -51,8 +49,4 @@ public class ItemInfoDTO {
 	public void setUpdatedDate(String updatedDate){
 		this.updatedDate = updatedDate;
 	}
-
-
-
-
 }

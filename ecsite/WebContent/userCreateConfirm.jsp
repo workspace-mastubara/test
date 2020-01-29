@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +9,7 @@
 <title>UserCreateConfirm画面</title>
 </head>
 <body>
-	<div id="header">
-	</div>
+	<div id="header"></div>
 	<div id="main">
 		<div id="top">
 			<p>UserCreateConfirm</p>
@@ -21,36 +20,27 @@
 				<s:form action="UserCreateCompleteAction">
 					<tr id="box">
 						<td><label>ログインID:</label></td>
-						<td>
-							<s:property value="loginUserId" escape="false" />
-						</td>
+						<td><s:property value="loginUserId" escape="false" /></td>
 					</tr>
 
 					<tr id="box">
 						<td><label>ログインPASS:</label></td>
-						<td>
-							<s:property value="loginPassword" escape="false"/>
-						</td>
+						<td><s:property value="loginPassword" escape="false" /></td>
 					</tr>
 
 					<tr id="box">
 						<td><label>ユーザー名:</label></td>
-						<td>
-							<s:property value="userName" escape="false"/>
-						</td>
+						<td><s:property value="userName" escape="false" /></td>
 					</tr>
 
 					<tr>
-						<td><s:submit value="完了"/></td>
+						<td><s:submit value="完了" /></td>
 					</tr>
 				</s:form>
 			</table>
 		</div>
 	</div>
-	<div id="footer">
-	</div>
-
-
+	<div id="footer"></div>
 
 </body>
 </html>

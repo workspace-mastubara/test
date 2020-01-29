@@ -1,7 +1,6 @@
 package com.internousdev.ecsite.dto;
 
 public class BuyItemDTO {
-
 	private int id;
 	private String itemName;
 	private String itemPrice;

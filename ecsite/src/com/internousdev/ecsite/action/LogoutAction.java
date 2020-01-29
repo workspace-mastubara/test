@@ -14,8 +14,6 @@ public class LogoutAction extends ActionSupport implements SessionAware{
 		return SUCCESS;
 	}
 
-
-
 	public void setSession(Map<String, Object> session){
 		this.session = session;
 	}

@@ -9,6 +9,5 @@
 </head>
 <body>
 	<a href='<s:url action="AdminAction"/>'>管理者TOPへ</a>
-
 </body>
 </html>

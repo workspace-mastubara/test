@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +9,7 @@
 <title>UserCreateComplete画面</title>
 </head>
 <body>
-	<div id="header">
-	</div>
+	<div id="header"></div>
 	<div id="main">
 		<div id="top">
 			<P>UserCreateComplete</P>
@@ -24,7 +23,6 @@
 		</div>
 	</div>
 
-	<div id="footer">
-	</div>
+	<div id="footer"></div>
 </body>
 </html>

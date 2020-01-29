@@ -5,7 +5,6 @@ public class UserInfoDTO {
 	private String loginId;
 	private String userName;
 
-
 	public int getId(){
 		return this.id;
 	}
@@ -26,5 +25,4 @@ public class UserInfoDTO {
 	public void setUserName(String userName){
 		this.userName = userName;
 	}
-
 }

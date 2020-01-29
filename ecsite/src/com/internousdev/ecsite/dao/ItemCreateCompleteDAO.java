@@ -33,7 +33,6 @@ public class ItemCreateCompleteDAO {
 			e.printStackTrace();
 		}
 		return count;
-
 	}
 
 }

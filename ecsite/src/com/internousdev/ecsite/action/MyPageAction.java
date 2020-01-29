@@ -18,7 +18,6 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	private String deleteFlg;
 	private String message;
 
-
 	public String execute()throws SQLException{
 		if(!session.containsKey("login_user_id")){
 			return ERROR;
@@ -69,7 +68,5 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	public String getMessage(){
 		return this.message;
 	}
-
-
 
 }
