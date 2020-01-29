@@ -7,7 +7,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.internousdev.Test.dao.PurchaseHistoryInfoDAO;
 import com.internousdev.Test.dto.PurchaseHistoryInfoDTO;
 
-public class DeletePurchaseHistroyAction extends ActionSupport {
+public class DeletePurchaseHistryAction extends ActionSupport {
 	private String userId;
 	private PurchaseHistoryInfoDAO purchaseHistoryInfoDAO = new PurchaseHistoryInfoDAO();
 	private List<PurchaseHistoryInfoDTO> purchaseHistoryInfoDTOList = new ArrayList<PurchaseHistoryInfoDTO>();
