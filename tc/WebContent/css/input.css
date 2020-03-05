@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.txt {
+	width: 99%;
+	height: 100%;
+	border: 0.5px solid #999;
+	font-size: 1.3rem;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: inset 0px 2px 0px #ccc;
+}
+
+/* .input_txt .txt::placeholder {
+  color: #20b2aa;
+  font-size: 0.5rem;
+
+} */
+
+.txt:focus {
+	border: 1px solid #20b2aa;
+	outline: 0;
+}
