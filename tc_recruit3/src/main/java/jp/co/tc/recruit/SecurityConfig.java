@@ -27,7 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	private static final String USER_SQL = "SELECT "
 			+ "user_id, "
 			+ "password, "
-			+ "CASE enabled WHEN 0 THEN true WHEN 1 THEN false END  as enabled "
+			+ "enabled "
 			+ "FROM XXTC_USER "
 			+ "WHERE user_id = ?";
 
